@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  macOS launchd template for scheduled website auto-push.
+
+  Install:
+    chmod +x scripts/auto_push_website.sh
+    cp scripts/com.wonjun.website.autopush.plist ~/Library/LaunchAgents/
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.wonjun.website.autopush.plist
+    launchctl enable gui/$(id -u)/com.wonjun.website.autopush
+
+  Test:
+    launchctl kickstart -k gui/$(id -u)/com.wonjun.website.autopush
+
+  Logs:
+    tail -f ~/Library/Logs/website-autopush.log
+    tail -f ~/Library/Logs/website-autopush.err
+
+  Uninstall:
+    launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.wonjun.website.autopush.plist
+    rm ~/Library/LaunchAgents/com.wonjun.website.autopush.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.wonjun.website.autopush</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/wonjun/Library/CloudStorage/GoogleDrive-dnjwn2915@gmail.com/My Drive/02_JobSearch/01_ResumeMD/scripts/auto_push_website.sh</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>22</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/wonjun/Library/Logs/website-autopush.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/wonjun/Library/Logs/website-autopush.err</string>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/wonjun/Library/CloudStorage/GoogleDrive-dnjwn2915@gmail.com/My Drive/02_JobSearch/01_ResumeMD</string>
+</dict>
+</plist>
