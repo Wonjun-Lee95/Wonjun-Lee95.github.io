@@ -116,6 +116,64 @@ a:hover {
   font-size: 14px;
 }
 
+.contact-reveal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fafafa;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.contact-reveal summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 7px 11px;
+  color: var(--accent);
+  font-weight: 600;
+  user-select: none;
+}
+
+.contact-reveal summary::-webkit-details-marker {
+  display: none;
+}
+
+.contact-reveal[open] {
+  padding-right: 11px;
+}
+
+.contact-reveal[open] summary {
+  border-right: 1px solid var(--line);
+  margin-right: 8px;
+}
+
+.contact-reveal a {
+  padding: 7px 0;
+  color: var(--text);
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.skill-card {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fbfbfb;
+}
+
+.skill-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  color: var(--text);
+}
+
 main {
   max-width: var(--max-width);
   margin: 0 auto 46px auto;
@@ -233,6 +291,10 @@ li {
   .item-header {
     flex-direction: column;
     gap: 2px;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr;
   }
 
   .item-meta {
