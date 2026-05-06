@@ -406,3 +406,88 @@ li {
     border-color: #ccc;
   }
 }
+
+.education-list {
+  display: grid;
+  gap: 22px;
+}
+
+.education-item {
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.04);
+}
+
+.education-main {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.school-name {
+  margin: 0;
+  font-family: var(--name-font);
+  font-size: 28px;
+  line-height: 1.05;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.3px;
+}
+
+.degree {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 650;
+  color: var(--text);
+}
+
+.education-meta {
+  margin: 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.education-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.meta-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.meta-chip:hover {
+  border-color: var(--accent);
+  background: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .education-item {
+    padding: 17px 18px;
+  }
+
+  .school-name {
+    font-size: 24px;
+  }
+
+  .degree {
+    font-size: 16px;
+  }
+
+  .education-meta {
+    font-size: 14px;
+  }
+}
