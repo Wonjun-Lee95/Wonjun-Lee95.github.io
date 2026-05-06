@@ -504,6 +504,12 @@ li {
   text-align: center;
 }
 
+@media (max-width: 420px) {
+  .contact-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 720px) {
   .nav {
     align-items: flex-start;
@@ -559,14 +565,22 @@ li {
     text-align: left;
   }
 
-  .contact-row {
-    align-items: flex-start;
-  }
+.contact-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  align-items: stretch;
+}
 
-  .contact-reveal {
-    width: 100%;
-  }
+.contact-reveal,
+.contact-pill {
+  width: 100%;
+  justify-content: center;
+}
 
+.contact-reveal a {
+  margin-left: 8px;
+}
   .education-item {
     padding: 17px 18px;
   }
