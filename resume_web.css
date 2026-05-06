@@ -600,4 +600,33 @@ li {
     text-align: left;
     padding-top: 0;
   }
+
+  .military-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .military-date-desktop {
+    display: none;
+  }
+
+  .military-date-mobile {
+    display: block;
+    margin: 3px 0 10px;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
 }
+
+
+
+.military-date-mobile {
+  display: none;
+}
+
+.no-wrap-date {
+  white-space: nowrap;
+}
+
+
