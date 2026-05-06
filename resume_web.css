@@ -248,7 +248,7 @@ a:hover {
 
 .entry {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 250px;
+  grid-template-columns: minmax(0, 1fr) 135px;
   gap: 20px;
   padding: 16px 0;
   border-top: 1px solid var(--line);
@@ -262,7 +262,11 @@ a:hover {
 .entry h3 {
   margin: 0 0 4px;
   font-size: 18px;
-  color: var(--text);
+  color: var(--accent);
+}
+
+.entry h3 a {
+  color: var(--accent);
 }
 
 .entry p {
