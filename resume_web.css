@@ -248,7 +248,7 @@ a:hover {
 
 .entry {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 135px;
+  grid-template-columns: minmax(0, 1fr) 190px;
   gap: 20px;
   padding: 16px 0;
   border-top: 1px solid var(--line);
@@ -293,6 +293,70 @@ ul {
 
 li {
   margin: 6px 0;
+}
+
+
+.research-card-list {
+  display: grid;
+  gap: 22px;
+}
+
+.research-card {
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.04);
+}
+
+.research-card-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.lab-name {
+  margin: 0;
+  font-family: var(--name-font);
+  font-size: 26px;
+  line-height: 1.08;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.25px;
+}
+
+.lab-name a {
+  color: var(--accent);
+}
+
+.role-title {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-weight: 650;
+  color: var(--muted);
+}
+
+.card-date {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: right;
+  padding-top: 4px;
+}
+
+.research-project {
+  margin-top: 16px;
+}
+
+.research-project:first-of-type {
+  margin-top: 10px;
+}
+
+.no-wrap-date {
+  white-space: nowrap;
 }
 
 .publication-list {
@@ -517,5 +581,23 @@ li {
 
   .education-meta {
     font-size: 14px;
+  }
+
+  .research-card {
+    padding: 17px 18px;
+  }
+
+  .research-card-header {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .lab-name {
+    font-size: 23px;
+  }
+
+  .card-date {
+    text-align: left;
+    padding-top: 0;
   }
 }
