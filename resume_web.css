@@ -131,8 +131,8 @@ a:hover {
 }
 
 .profile-photo-placeholder {
-  width: 158px;
-  height: 158px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 2px solid var(--accent);
   background:
