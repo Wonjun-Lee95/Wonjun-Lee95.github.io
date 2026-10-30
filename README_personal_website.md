@@ -8,7 +8,9 @@ This folder contains a static personal resume website.
 .
 ├── index.html
 ├── resume_web.css
-└── WonJunLee_Resume.pdf   # optional; add this if you want the "Download Resume PDF" link to work
+├── my-resume.md
+├── WJLEE_CV.pdf       # copied from 00_CV_Resume_master (CV button)
+└── WJLEE_Resume.pdf   # copied from 00_CV_Resume_master (Resume button)
 ```
 
 ## Local preview
@@ -42,14 +44,14 @@ YOUR_GITHUB_USERNAME.github.io
 ```text
 index.html
 resume_web.css
-WonJunLee_Resume.pdf
+WJLEE_Resume.pdf
 ```
 
 3. Push to GitHub:
 
 ```bash
 git init
-git add index.html resume_web.css WonJunLee_Resume.pdf
+git add index.html resume_web.css WJLEE_Resume.pdf
 git commit -m "Create personal website"
 git branch -M main
 git remote add origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME.github.io.git
@@ -113,7 +115,7 @@ git commit -m "Update website"
 git push
 ```
 
-If the site links to `WonJunLee_Resume.pdf`, replace the PDF file and commit it too.
+If the site links to `WJLEE_Resume.pdf`, replace the PDF file and commit it too.
 
 ## Notes
 
