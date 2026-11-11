@@ -23,7 +23,7 @@ Ph.D. candidate researcher in network scheduling, stochastic optimization, and s
 West Lafayette, IN, U.S.
 
 **Ph.D. Candidate, Electrical and Computer Engineering**  
-Aug 2021 – May 2027 (expected)
+Aug 2021 – Exp. May 2027
 
 - Advisor: Prof. Chih-Chun Wang
 - GPA: 3.81/4.0
@@ -46,15 +46,17 @@ Purdue University, West Lafayette, IN, U.S.
 **Research Assistant**  
 Aug 2021 – Present
 
-**AoI-Optimal Scheduling and Resource Allocation for Multi-Channel Wireless Systems → [C2, J1]**
+**Latency-and-Cost-Aware Channel Scheduling → [C2]**
 
-- Characterized the AoI-optimal scheduling policy for arbitrary *K*-channel systems as a semi-Markov decision process on the age state: threshold (water-filling) structure with closed-form solutions, and reduced policy computation from O(N³) to O(N).
-- Extended the framework to a joint latency–cost–quality–freshness optimization over heterogeneous channels (e.g., cloud vs. edge server selection), with a structured channel-selection algorithm that scales to large systems.
+- Developed a scheduling and resource-allocation framework for heterogeneous multi-channel systems, jointly optimizing latency, transmission cost, data quality, and information freshness.
+- Designed a structured channel-selection algorithm that systematically computes the policy thresholds and enables scalable scheduling decisions in systems with diverse channel attributes.
+- Reduced the computational complexity of finding the scheduling policy from O(N³) to O(N), improving the practicality of the approach for larger-scale systems.
 
-**Cost-Aware Multi-Sensor Scheduling for Remote Estimation under Correlated Noise → [C3]**
+**Cost-Aware Sensor Scheduling in the Correlated Noise Environment**
 
-- Developed a cost-aware sensor-scheduling framework that decides which sensors transmit under communication and sensing budgets, trading estimation error against cost.
-- Designed an estimation method that alleviates the computational burden of Kalman filtering under correlated noise and remains tractable for high-dimensional systems.
+- Developed a cost-aware scheduling framework for multi-sensor systems under correlated noise, targeting efficient estimation under communication and sensing constraints.
+- Designed an estimation method that alleviates the computational burden associated with Kalman filtering in correlated-noise settings, improving tractability for high-dimensional systems.
+- Proposed an optimization approach for balancing estimation error and communication cost in resource-constrained sensing systems.
 
 ### [Digital Communications Lab](http://dcl.yonsei.ac.kr)
 
@@ -63,10 +65,10 @@ Yonsei University, South Korea
 **Undergraduate Research Intern**  
 Jan – Jun 2020
 
-**5G Network Performance Benchmarking in Heterogeneous Environments**
+**5G Network Performance Benchmark in Heterogeneous Environment**
 
-- Built an Android network-analysis application (UDP socket programming) to measure end-to-end latency and throughput in heterogeneous 5G/Wi-Fi environments.
-- Implemented UDP hole punching for real-world connectivity benchmarking.
+- Developed an Android-based network analysis application using UDP socket programming to measure end-to-end latency/throughput in heterogeneous network communication environments.
+- Implemented UDP hole punching to support connectivity benchmarking in real-world 5G settings.
 
 ### High Dimensional Signal Processing Lab
 
@@ -81,8 +83,6 @@ Jul – Aug 2019
 
 ## Publications
 
-- [J1] W. J. Lee and C.-C. Wang, “Latency-, cost-, and freshness-aware scheduling over heterogeneous multi-channel systems,” journal article, in preparation.
-- [C3] W. J. Lee and C.-C. Wang, “Cost-aware sensor scheduling for multi-sensor remote estimation under correlated noise,” submitted to IEEE Int. Conf. on Communications (ICC), 2027.
 - [C2] W. J. Lee and C.-C. Wang, [“AoI-optimal scheduling for arbitrary K-channel update-through-queue systems,”](https://engineering.purdue.edu/~chihw/pub_pdf/24C_AoI_multi.pdf) in Proc. IEEE Int. Symp. on Information Theory (ISIT), 2024, pp. 957–962.
 - [C1] J. Kim, S. Woo, W. J. Lee, D. Kim, and C. Lee, [“Analyzing Decision Polygons of DNN-based Classification Methods,”](https://www.scitepress.org/Papers/2020/98882/98882.pdf) in Proc. 17th Int. Conf. Informatics in Control, Automation and Robotics (ICINCO), 2020, pp. 112–119.
 
@@ -90,17 +90,16 @@ Jul – Aug 2019
 
 - Reviewer, IEEE International Symposium on Information Theory (ISIT), 2026
 
-## Technical Skills
+## Skills
 
-- Wireless: 5G/6G Resource Allocation, MAC Scheduling, Age of Information
-- Modeling & Optimization: MDPs, Stochastic Control, Convex Optimization, Probability, Information Theory, Reinforcement Learning (fundamentals)
-- Programming: MATLAB, Python (NumPy, PyTorch), C, Java
+- Modeling & Optimization: Convex Optimization, Stochastic Processes, Probability Theory, Information Theory, Control Theory, Graph Theory
+- Programming Languages: MATLAB, C, Python, Java/Android
 
-## Honors and Scholarships
+## Awards & Honors
 
 - Ross Fellowship, Purdue University, 2021–2025
 - Student Travel Grant, IEEE International Symposium on Information Theory (ISIT), 2024
-- Dean’s List and Honors Scholarship, Yonsei University, 2015–2016, 2019–2020
+- Dean’s List, Yonsei University, 2015–2016, 2019–2020
 
 ## Military Experience
 
@@ -111,5 +110,5 @@ Seoul, South Korea
 **Sergeant**  
 Mar 2017 – Dec 2018
 
-- Served as Information Management Officer (MOS 25B, IT Specialist) at the USFK Public Affairs Office, supporting mission-critical IT and communications operations.
-- Led 6 soldiers as a squad leader, managing ~100 networked workstations and coordinating ROK–U.S. technical operations during international joint military exercises (Ulchi-Freedom Guardian 2017 / Foal Eagle 2018).
+- Served in the Information Management Officer duty position (MOS 25B, IT Specialist) at the USFK Public Affairs Office, supporting mission-critical IT and communications operations.
+- Led 6 soldiers as a squad leader while managing approximately 100 network-connected workstations and coordinating technical operations between ROK and U.S. military teams during international joint military exercises (Ulchi-Freedom Guardian 2017 / Foal Eagle 2018).
