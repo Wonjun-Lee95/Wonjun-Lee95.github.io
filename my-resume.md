@@ -5,7 +5,7 @@
 
 ## Profile
 
-Ph.D. candidate researcher in network scheduling, stochastic optimization, and scalable algorithm design for resource allocation, low-latency communication, and information freshness in networked systems. Develops provably optimal scheduling policies for multi-channel communication and multi-sensor estimation, and turns structural properties of the optimal policy into algorithms that scale to large systems.
+Ph.D. candidate in wireless network scheduling and resource allocation for 5G/6G systems. Develops provably optimal, low-complexity scheduling policies (stochastic optimization / MDP) for multi-channel communication and multi-sensor estimation, and turns the optimal policy’s structure into scalable algorithms and priors for learning-based network decision-making.
 
 ## Contact Details
 
@@ -46,17 +46,15 @@ Purdue University, West Lafayette, IN, U.S.
 **Research Assistant**  
 Aug 2021 – Present
 
-**Latency-and-Cost-Aware Channel Scheduling → [C2]**
+**AoI-Optimal Scheduling and Resource Allocation for Multi-Channel Wireless Systems → [C2, J1]**
 
-- Developed a scheduling and resource-allocation framework for heterogeneous multi-channel systems, jointly optimizing latency, transmission cost, data quality, and information freshness.
-- Designed a structured channel-selection algorithm that systematically computes the policy thresholds and enables scalable scheduling decisions in systems with diverse channel attributes.
-- Reduced the computational complexity of finding the scheduling policy from O(N³) to O(N), improving the practicality of the approach for larger-scale systems.
+- Characterized the AoI-optimal scheduling policy for arbitrary *K*-channel systems as a semi-Markov decision process on the age state: threshold (water-filling) structure with closed-form solutions, and reduced policy computation from O(N³) to O(N).
+- Extended the framework to a joint latency–cost–quality–freshness optimization over heterogeneous channels (e.g., cloud vs. edge server selection), with a structured channel-selection algorithm that scales to large systems (journal article in preparation).
 
-**Cost-Aware Sensor Scheduling in the Correlated Noise Environment**
+**Cost-Aware Multi-Sensor Scheduling for Remote Estimation under Correlated Noise → [C3]**
 
-- Developed a cost-aware scheduling framework for multi-sensor systems under correlated noise, targeting efficient estimation under communication and sensing constraints.
-- Designed an estimation method that alleviates the computational burden associated with Kalman filtering in correlated-noise settings, improving tractability for high-dimensional systems.
-- Proposed an optimization approach for balancing estimation error and communication cost in resource-constrained sensing systems.
+- Developed a cost-aware sensor-scheduling framework that decides which sensors transmit under communication and sensing budgets, trading estimation error against cost.
+- Designed an estimation method that alleviates the computational burden of Kalman filtering under correlated noise and remains tractable for high-dimensional systems.
 
 ### [Digital Communications Lab](http://dcl.yonsei.ac.kr)
 
@@ -65,10 +63,9 @@ Yonsei University, South Korea
 **Undergraduate Research Intern**  
 Jan – Jun 2020
 
-**5G Network Performance Benchmark in Heterogeneous Environment**
+**5G Network Performance Benchmarking in Heterogeneous Environments**
 
-- Developed an Android-based network analysis application using UDP socket programming to measure end-to-end latency/throughput in heterogeneous network communication environments.
-- Implemented UDP hole punching to support connectivity benchmarking in real-world 5G settings.
+- Built an Android network-analysis application (UDP socket programming) to measure end-to-end latency and throughput in heterogeneous 5G/Wi-Fi environments; implemented UDP hole punching for real-world connectivity benchmarking.
 
 ### High Dimensional Signal Processing Lab
 
@@ -83,6 +80,8 @@ Jul – Aug 2019
 
 ## Publications
 
+- [J1] W. J. Lee and C.-C. Wang, “Latency-, cost-, and freshness-aware scheduling over heterogeneous multi-channel systems,” journal article, in preparation.
+- [C3] W. J. Lee and C.-C. Wang, “Cost-aware sensor scheduling for multi-sensor remote estimation under correlated noise,” submitted to IEEE Int. Conf. on Communications (ICC), 2027.
 - [C2] W. J. Lee and C.-C. Wang, [“AoI-optimal scheduling for arbitrary K-channel update-through-queue systems,”](https://engineering.purdue.edu/~chihw/pub_pdf/24C_AoI_multi.pdf) in Proc. IEEE Int. Symp. on Information Theory (ISIT), 2024, pp. 957–962.
 - [C1] J. Kim, S. Woo, W. J. Lee, D. Kim, and C. Lee, [“Analyzing Decision Polygons of DNN-based Classification Methods,”](https://www.scitepress.org/Papers/2020/98882/98882.pdf) in Proc. 17th Int. Conf. Informatics in Control, Automation and Robotics (ICINCO), 2020, pp. 112–119.
 
@@ -90,10 +89,11 @@ Jul – Aug 2019
 
 - Reviewer, IEEE International Symposium on Information Theory (ISIT), 2026
 
-## Skills
+## Technical Skills
 
-- Modeling & Optimization: Convex Optimization, Stochastic Processes, Probability Theory, Information Theory, Control Theory, Graph Theory
-- Programming Languages: MATLAB, C, Python, Java/Android
+- Wireless: 5G/6G Resource Allocation, MAC Scheduling, Age of Information
+- Modeling & Optimization: MDPs, Stochastic Control, Convex Optimization, Probability, Information Theory, Reinforcement Learning (fundamentals)
+- Programming: MATLAB, Python (NumPy, PyTorch), C, Java
 
 ## Awards & Honors
 
@@ -110,5 +110,4 @@ Seoul, South Korea
 **Sergeant**  
 Mar 2017 – Dec 2018
 
-- Served in the Information Management Officer duty position (MOS 25B, IT Specialist) at the USFK Public Affairs Office, supporting mission-critical IT and communications operations.
-- Led 6 soldiers as a squad leader while managing approximately 100 network-connected workstations and coordinating technical operations between ROK and U.S. military teams during international joint military exercises (Ulchi-Freedom Guardian 2017 / Foal Eagle 2018).
+- Information Management Officer (MOS 25B), USFK Public Affairs Office; led 6 soldiers as squad leader, managing ~100 networked workstations and coordinating ROK–U.S. technical operations during joint exercises (UFG 2017 / Foal Eagle 2018).

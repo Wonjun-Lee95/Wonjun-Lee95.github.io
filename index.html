@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Won Jun Lee</title>
-  <meta name="description" content="Won Jun Lee, Ph.D. Candidate in Electrical and Computer Engineering at Purdue University. Research in network scheduling, stochastic optimization, and information freshness.">
+  <meta name="description" content="Won Jun Lee, Ph.D. Candidate in Electrical and Computer Engineering at Purdue University. Research in wireless network scheduling and resource allocation for 5G/6G systems, stochastic optimization, and Age of Information.">
   <link rel="stylesheet" href="resume_web.css">
 </head>
 <body>
@@ -28,11 +28,10 @@
           <h1>Won Jun Lee</h1>
           <p class="subtitle">Ph.D. Candidate in Electrical and Computer Engineering, Purdue University</p>
           <p class="summary">
-            Ph.D. candidate researcher in <span class="highlight">network scheduling</span>, stochastic optimization, and scalable
-            algorithm design for resource allocation, low-latency communication, and <span class="highlight">information freshness</span>
-            in networked systems. I develop <span class="highlight">provably optimal scheduling policies</span> for multi-channel
-            communication and multi-sensor estimation, and turn structural properties of the optimal policy into algorithms
-            that scale to large systems.
+            Ph.D. candidate in <span class="highlight">wireless network scheduling and resource allocation for 5G/6G systems</span>.
+            I develop provably optimal, low-complexity scheduling policies (<span class="highlight">stochastic optimization / MDP</span>)
+            for multi-channel communication and multi-sensor estimation, and turn the optimal policy's structure into scalable
+            algorithms and priors for <span class="highlight">learning-based network decision-making</span>.
           </p>
 
           <div class="contact-row" aria-label="Contact links">
@@ -102,20 +101,18 @@
           </div>
 
           <div class="research-project">
-            <p class="project-title">Latency-and-Cost-Aware Channel Scheduling → [C2]</p>
+            <p class="project-title">AoI-Optimal Scheduling and Resource Allocation for Multi-Channel Wireless Systems → [C2, J1]</p>
             <ul>
-              <li>Developed a scheduling and resource-allocation framework for heterogeneous multi-channel systems, jointly optimizing latency, transmission cost, data quality, and information freshness.</li>
-              <li>Designed a structured channel-selection algorithm that systematically computes the policy thresholds and enables scalable scheduling decisions in systems with diverse channel attributes.</li>
-              <li>Reduced the computational complexity of finding the scheduling policy from O(N<sup>3</sup>) to O(N), improving the practicality of the approach for larger-scale systems.</li>
+              <li>Characterized the AoI-optimal scheduling policy for arbitrary <em>K</em>-channel systems as a semi-Markov decision process on the age state: threshold (water-filling) structure with closed-form solutions, and reduced policy computation from O(N<sup>3</sup>) to O(N).</li>
+              <li>Extended the framework to a joint latency–cost–quality–freshness optimization over heterogeneous channels (e.g., cloud vs. edge server selection), with a structured channel-selection algorithm that scales to large systems (journal article in preparation).</li>
             </ul>
           </div>
 
           <div class="research-project">
-            <p class="project-title">Cost-Aware Sensor Scheduling in the Correlated Noise Environment</p>
+            <p class="project-title">Cost-Aware Multi-Sensor Scheduling for Remote Estimation under Correlated Noise → [C3]</p>
             <ul>
-              <li>Developed a cost-aware scheduling framework for multi-sensor systems under correlated noise, targeting efficient estimation under communication and sensing constraints.</li>
-              <li>Designed an estimation method that alleviates the computational burden associated with Kalman filtering in correlated-noise settings, improving tractability for high-dimensional systems.</li>
-              <li>Proposed an optimization approach for balancing estimation error and communication cost in resource-constrained sensing systems.</li>
+              <li>Developed a cost-aware sensor-scheduling framework that decides which sensors transmit under communication and sensing budgets, trading estimation error against cost.</li>
+              <li>Designed an estimation method that alleviates the computational burden of Kalman filtering under correlated noise and remains tractable for high-dimensional systems.</li>
             </ul>
           </div>
         </article>
@@ -130,10 +127,9 @@
           </div>
 
           <div class="research-project">
-            <p class="project-title">5G Network Performance Benchmark in Heterogeneous Environment</p>
+            <p class="project-title">5G Network Performance Benchmarking in Heterogeneous Environments</p>
             <ul>
-              <li>Developed an Android-based network analysis application using UDP socket programming to measure end-to-end latency/throughput in heterogeneous network communication environments.</li>
-              <li>Implemented UDP hole punching to support connectivity benchmarking in real-world 5G settings.</li>
+              <li>Built an Android network-analysis application (UDP socket programming) to measure end-to-end latency and throughput in heterogeneous 5G/Wi-Fi environments; implemented UDP hole punching for real-world connectivity benchmarking.</li>
             </ul>
           </div>
         </article>
@@ -166,8 +162,7 @@
     <p>Sergeant</p>
     <p class="military-date-mobile">Mar. 2017 – Dec. 2018</p>
     <ul>
-      <li>Served in the Information Management Officer duty position (MOS 25B, IT Specialist) at the USFK Public Affairs Office, supporting mission-critical IT and communications operations.</li>
-      <li>Led 6 soldiers as a squad leader while managing approximately 100 network-connected workstations and coordinating technical operations between ROK and U.S. military teams during international joint military exercises (Ulchi-Freedom Guardian 2017 / Foal Eagle 2018).</li>
+      <li>Information Management Officer (MOS 25B), USFK Public Affairs Office; led 6 soldiers as squad leader, managing ~100 networked workstations and coordinating ROK–U.S. technical operations during joint exercises (UFG 2017 / Foal Eagle 2018).</li>
     </ul>
   </div>
   <div class="entry-meta no-wrap-date military-date-desktop">Mar. 2017 – Dec. 2018</div>
@@ -179,6 +174,18 @@
       <h2>Publications</h2>
 
       <div class="publication-list">
+        <article class="publication">
+          <h3>[J1] Latency-, cost-, and freshness-aware scheduling over heterogeneous multi-channel systems</h3>
+          <p><strong>W. J. Lee</strong> and C.-C. Wang</p>
+          <p>Journal article, in preparation</p>
+        </article>
+
+        <article class="publication">
+          <h3>[C3] Cost-aware sensor scheduling for multi-sensor remote estimation under correlated noise</h3>
+          <p><strong>W. J. Lee</strong> and C.-C. Wang</p>
+          <p>Submitted to IEEE International Conference on Communications (ICC), 2027</p>
+        </article>
+
         <article class="publication">
           <h3>[C2] AoI-optimal scheduling for arbitrary K-channel update-through-queue systems</h3>
           <p><strong>W. J. Lee</strong> and C.-C. Wang</p>
@@ -205,24 +212,33 @@
 
       <div class="skills-grid">
         <div class="skill-group">
-          <h3>Modeling & Optimization</h3>
+          <h3>Wireless</h3>
           <div class="skill-tags">
-            <span>Convex Optimization</span>
-            <span>Stochastic Processes</span>
-            <span>Probability Theory</span>
-            <span>Information Theory</span>
-            <span>Control Theory</span>
-            <span>Graph Theory</span>
+            <span>5G/6G Resource Allocation</span>
+            <span>MAC Scheduling</span>
+            <span>Age of Information</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h3>Programming Languages</h3>
+          <h3>Modeling & Optimization</h3>
+          <div class="skill-tags">
+            <span>MDPs</span>
+            <span>Stochastic Control</span>
+            <span>Convex Optimization</span>
+            <span>Probability</span>
+            <span>Information Theory</span>
+            <span>Reinforcement Learning (fundamentals)</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Programming</h3>
           <div class="skill-tags">
             <span>MATLAB</span>
+            <span>Python (NumPy, PyTorch)</span>
             <span>C</span>
-            <span>Python</span>
-            <span>Java/Android</span>
+            <span>Java</span>
           </div>
         </div>
       </div>
